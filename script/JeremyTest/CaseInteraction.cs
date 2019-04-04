@@ -48,7 +48,7 @@ public class CaseInteraction : MonoBehaviour {
         Debug.Log("Click");
         Debug.Log("x = " + this.gameObject.transform.position.x + "y = " + this.gameObject.transform.position.z);
         //on voit l'unité cliqué
-        BoardManager.getInstance().UnitClicked(x, z);
+        /*BoardManager.getInstance().UnitClicked(x, z);*/
         //code pour voir les case adjacente en rouge
         movementPrevison(4);
     }
@@ -63,7 +63,7 @@ public class CaseInteraction : MonoBehaviour {
             Board.caseToVisite.Add(c);
         }
         List<CaseInteraction> listTemp = new List<CaseInteraction>();
-        while (counter < pm) //tant qu'on pourrais encore se déplacé
+        /*while (counter < pm) //tant qu'on pourrais encore se déplacé
         {
             foreach (CaseInteraction c in Board.caseToVisite)
             {
@@ -94,7 +94,7 @@ public class CaseInteraction : MonoBehaviour {
             }
             listTemp.Clear();
             counter++;
-        }
+        }*/
         Board.caseToVisite.Clear();
 
     }

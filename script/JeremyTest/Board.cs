@@ -14,7 +14,7 @@ public class Board : MonoBehaviour {
     public GameObject tile0Prefab;
     public GameObject tile1Prefab;
     public GameObject tile2Prefab;
-    public GameObject WaterJeu;
+    //public GameObject WaterJeu;
     public GameObject casePrefab;
     //public int [,] Map = Map.map1;
     Map map = new Map();
@@ -32,7 +32,7 @@ public class Board : MonoBehaviour {
     // Use this for initialization
     void Start () {
         ListTile = new List<GameObject>();
-        Instantiate(WaterJeu);
+        //Instantiate(WaterJeu);
         int id = 0;
 
 

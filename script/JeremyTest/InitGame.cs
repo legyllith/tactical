@@ -7,7 +7,7 @@ public class InitGame : MonoBehaviour {
     public string testTrigger = "z";
     public string testPhase = "p";
     public Board board;
-    public List<Unit> list;
+    //public List<Unit> list;
 
     // Use this for initialization
     void Start () {
@@ -23,21 +23,21 @@ public class InitGame : MonoBehaviour {
         board.tile1Prefab = (GameObject)Resources.Load("tile1");
         board.tile0Prefab = (GameObject)Resources.Load("tile0");
         board.tile2Prefab = (GameObject)Resources.Load("tile2");
-        board.WaterJeu = (GameObject)Resources.Load("WaterJeu");
+        //board.WaterJeu = (GameObject)Resources.Load("WaterJeu");
         board.casePrefab = (GameObject)Resources.Load("case");
 
 
         //Instanciation d'un personnage
-        createUnit("PAUL");
+        /*createUnit("PAUL");
         createUnit("GARLAND");
 
         //setFirstPhase
-        BoardManager boardManager = BoardManager.getInstance();
+        BoardManager boardManager = BoardManager.getInstance();*/
 
     }
 	
 	// Update is called once per frame
-	void Update ()
+	/*void Update ()
     {
         if(list.Count != 0)
         {
@@ -46,7 +46,7 @@ public class InitGame : MonoBehaviour {
 
         if(Input.GetKeyDown(testTrigger))
         {
-            if(BoardManager.getInstance().getActivePhase() is PlayPhase)
+           /* if(BoardManager.getInstance().getActivePhase() is PlayPhase)
             {
                 foreach (Unit u in BoardManager.getInstance().getListUnits())
                 {
@@ -81,7 +81,7 @@ public class InitGame : MonoBehaviour {
 	}
 
 
-    public void createUnit(string n)
+    /*public void createUnit(string n)
     {
 
         UnitData test = Resources.Load<UnitData>("Enemies/" + n);
@@ -99,7 +99,7 @@ public class InitGame : MonoBehaviour {
         unit.name = n;
         unit.transform.position = new Vector3(x, 1, z);
         unit.transform.Rotate(new Vector3(0, -45, 0));
-        BoardManager.getInstance().getListUnits().Add(unit.GetComponent<Unit>());
+        /*BoardManager.getInstance().getListUnits().Add(unit.GetComponent<Unit>());*/
 
 
         /*Debug.Log("Bla");
@@ -125,7 +125,7 @@ public class InitGame : MonoBehaviour {
         unitInstance.transform.position = new Vector3(x, 1, z);
         BoardManager.getInstance().getListUnits().Add(unitInstance);
         Debug.Log("Test instance");
-       */
+       
 
-    }
+    }*/
 }
